@@ -1,0 +1,27 @@
+html {
+    font-family: 'Tajawal', sans-serif;
+}
+.nav-bar {
+    display: flex;
+    margin: -1em;
+    padding: 2em;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    padding-left: 2em;
+    padding-right: 10em;
+}
+.logo h1 {
+    font-size: 2em;
+}
+#logo-img {
+    height: 4em;
+    width: 4em;
+}
+.links a {
+    padding: 2em;
+    text-decoration: none;
+    font-size: 1em;
+}

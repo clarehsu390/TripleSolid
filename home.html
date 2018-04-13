@@ -25,35 +25,31 @@
 		</nav>
 	</header>
 	
-	<section>
-	
-		<article>
-			<header>
-				<h2>Article title</h2>
-				<p>Posted on <time datetime="2009-09-04T16:31:24+02:00">September 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
-			</header>
-			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+	<section class="landing">
+		<img src="assets/image01.png" alt="landing image">
+		<article class="overlay">
+			<h2>Supply Chain Service and Consulting</h2>
+			<span class="hidden" id="first-span">For consulting, we will find different professionals for different cases</span>
+			<span class="hidden" id="second-span">We will sign a contract with the customer and professional by cases</span>
 		</article>
-		
-		<article>
-			<header>
-				<h2>Article title</h2>
-				<p>Posted on <time datetime="2009-09-04T16:31:24+02:00">September 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
-			</header>
-			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-		</article>
-		
+
 	</section>
 
-	<aside>
-		<h2>About section</h2>
-		<p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-	</aside>
 
 	<footer>
-		<p>Copyright 2009 Your name</p>
+		<p>Copyright 2018 Triple Solid</p>
 	</footer>
+	<script>
+		let first = document.getElementById('first-span');
+		let second = document.getElementById('second-span');
 
+		const toggleClass = (el) => {
+			el.className += " show";
+		}
+
+		setTimeout(() => toggleClass(first), 1000);
+		setTimeout(() => toggleClass(second), 3000);
+	</script>
 </body>
 
 </html>

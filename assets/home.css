@@ -1,10 +1,11 @@
 html {
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Helvetica', sans-serif;
 }
 .nav-bar {
     display: flex;
     margin: -1em;
-    padding: 2em;
+    padding: 1em;
+    height: 90px;
     justify-content: center;
     align-items: center;
 }
@@ -15,6 +16,7 @@ html {
 }
 .logo h1 {
     font-size: 2em;
+    font-weight: bold;
 }
 #logo-img {
     height: 4em;
@@ -24,4 +26,61 @@ html {
     padding: 2em;
     text-decoration: none;
     font-size: 1em;
+    color: black;
+}
+.links a:hover {
+    color: #4f90cf;
+}
+.landing {
+    display: flex;
+    justify-content: center;
+    height: 30em;
+}
+.landing img {
+    opacity: 0.5;
+}
+.overlay {
+    display: flex;
+    color: white;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 400px;
+    background: #4f90cf;
+    height: 30em;
+    opacity: 0.9;
+}
+.overlay h2 {
+    height: 100px;
+    padding: 1em;
+    width: 300px;
+   font-size: 30px;
+   border-bottom: solid 1px white;
+}
+.hidden {
+    display: none;
+}
+.show {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    animation: fadeIn 2s;
+    padding: 10px;
+}
+
+@keyframes fadeIn{
+    0% {
+        transform: translateY(100%);
+        opacity: 0.3
+    }
+    60% {
+
+        opacity: 0.7
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1
+    }
+
 }

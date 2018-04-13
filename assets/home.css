@@ -1,6 +1,13 @@
 html {
     font-family: 'Helvetica', sans-serif;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
+h1 {
+   text-align: center;
+}
 .nav-bar {
     display: flex;
     margin: -1em;
@@ -24,7 +31,6 @@ html {
 }
 .links a {
     padding: 2em;
-    text-decoration: none;
     font-size: 1em;
     color: black;
 }
@@ -68,7 +74,33 @@ html {
     animation: fadeIn 2s;
     padding: 10px;
 }
+#footer {
+    text-align: center;
+}
 
+.mission {
+    float: left;
+    color: #4f90cf;
+    padding: 2em;
+}
+.mission p {
+    width: 400px;
+    color: black;
+}
+.about {
+    float: right;
+    padding: 2em;
+    margin: -10px;
+}
+.about p {
+    width: 400px;
+}
+.contact {
+    text-align: center;
+}
+.contact a {
+    text-decoration: underline;
+}
 @keyframes fadeIn{
     0% {
         transform: translateY(100%);

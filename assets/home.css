@@ -40,9 +40,10 @@ h1 {
 .landing {
     display: flex;
     justify-content: center;
-    height: 30em;
+    height: 40em;
 }
 .landing img {
+    width: 70em;
     opacity: 0.5;
 }
 .overlay {
@@ -54,15 +55,15 @@ h1 {
     position: absolute;
     width: 400px;
     background: #4f90cf;
-    height: 30em;
+    height: 40em;
     opacity: 0.9;
 }
 .overlay h2 {
     height: 100px;
     padding: 1em;
     width: 300px;
-   font-size: 30px;
-   border-bottom: solid 1px white;
+    font-size: 30px;
+    border-bottom: solid 1px white;
 }
 .hidden {
     display: none;
@@ -77,26 +78,34 @@ h1 {
 #footer {
     text-align: center;
 }
-
-.mission {
-    float: left;
-    color: #4f90cf;
-    padding: 2em;
+.about-page h1 {
+   width: 10em;
 }
-.mission p {
+.about-page section{
+    display: flex;
+    align-items: center;
+    color: #4f90cf;
+    padding: 1em;
+}
+.about-page p {
     width: 400px;
     color: black;
+    padding-left: 20em;
 }
-.about {
-    float: right;
-    padding: 2em;
-    margin: -10px;
-}
-.about p {
-    width: 400px;
+.about-page {
+    display: flex;
+    width: 1000px;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    color: #4f90cf;
+    padding: 3em;
 }
 .contact {
     text-align: center;
+}
+.contact h1 {
+    color: #4f90cf;
 }
 .contact a {
     text-decoration: underline;

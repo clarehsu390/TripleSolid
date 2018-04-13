@@ -14,13 +14,14 @@
 
 	<header>
 		<nav class="nav-bar">
-            <div class="logo">
+            <a href="./home.html"><div class="logo">
                 <img id="logo-img" src="assets/company_logo.JPG"/>
                 <h1>Triple Solid</h1>
-            </div>
+			</div>
+		</a>
             <div class="links">
-                <a href="/about">About</a>
-                <a href="/contact">Contact Us</a>
+                <a href="./about.html">About</a>
+                <a href="./contact.html">Contact Us</a>
             </div>
 		</nav>
 	</header>
@@ -32,12 +33,15 @@
 			<span class="hidden" id="first-span">For consulting, we will find different professionals for different cases</span>
 			<span class="hidden" id="second-span">We will sign a contract with the customer and professional by cases</span>
 		</article>
+	</section>
+
+	<section>
 
 	</section>
 
 
 	<footer>
-		<p>Copyright 2018 Triple Solid</p>
+		<p id="footer">Copyright 2018 Triple Solid</p>
 	</footer>
 	<script>
 		let first = document.getElementById('first-span');
@@ -49,6 +53,9 @@
 
 		setTimeout(() => toggleClass(first), 1000);
 		setTimeout(() => toggleClass(second), 3000);
+
+		let footer = document.getElementById('footer');
+		footer.innerHTML = '&copy; Copyright ' + new Date().getFullYear() + " Triple Solid"
 	</script>
 </body>
 

@@ -1,3 +1,5 @@
+/* Needs a reset sections */
+
 html {
     font-family: 'Helvetica', sans-serif;
 }
@@ -5,35 +7,48 @@ a {
     text-decoration: none;
     color: black;
 }
-h1 {
-   text-align: center;
+
+/* Reusable */
+.align-vertical {
+    margin-top: auto;
+    margin-bottom: auto;
 }
+
+/* Nav bar Section */
 .nav-bar {
-    display: flex;
-    margin: -1em;
-    padding: 2em;
-    height: 90px;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    margin-top: 1em;
+    margin-bottom: 1em;
+    /* padding-bottom: 2em; */
+    /* height: 90px; */
+    /* justify-content: center; */
+    /* align-items: center; */
 }
-.logo {
+
+.flex {
     display: flex;
-    padding-left: 2em;
-    padding-right: 10em;
 }
-.logo h1 {
+
+.logo-font {
     font-size: 2em;
     font-weight: bold;
 }
+
 #logo-img {
-    height: 4em;
-    width: 4em;
+    height: 3em;
+    width: 3em;
 }
-.links a {
-    padding: 2em;
-    font-size: 1em;
+
+.links {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 14px;
+    font-size: 16px;
     color: black;
 }
+
 .links a:hover {
     color: #4f90cf;
 }

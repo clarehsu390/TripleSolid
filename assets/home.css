@@ -90,8 +90,29 @@ a {
     animation: fadeIn 2s;
     padding: 10px;
 }
-#footer {
+.objectives {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.objectives div {
+    flex-direction: column;
+    padding: 2em;
+}
+.objectives h2 {
+    color: #4f90cf;
+}
+.objectives img {
+    padding: 1em;
+    height: 20em;
+    width: 30em;
+}
+footer {
     text-align: center;
+}
+
+footer p {
+    margin-bottom: -0.1em;
 }
 .about-page h1 {
    width: 10em;

@@ -8,7 +8,8 @@ a {
     color: black;
 }
 h1 {
-    color: #4f90cf
+    color: #4f90cf;
+    text-align: center;
 }
 
 /* Reusable */
@@ -61,7 +62,7 @@ h1 {
     height: 35em;
 }
 .landing img {
-    width: 70em;
+    width: 65em;
     opacity: 0.5;
 }
 .overlay {
@@ -85,7 +86,7 @@ h1 {
 }
 
 #first-span {
-    padding: 3em;
+    padding: 2em;
 }
 .hidden {
     display: none;
@@ -121,9 +122,6 @@ footer {
 footer p {
     margin-bottom: -0.1em;
 }
-.about-page h1 {
-   width: 10em;
-}
 
 .about-page li {
     color: black;
@@ -133,11 +131,8 @@ footer p {
 }
 .about-page {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
     color: #4f90cf;
-    padding: 2em;
 }
 .about-page img {
     height: 18em;
@@ -161,6 +156,13 @@ footer p {
 }
 .products > * {
     padding: 10px;
+}
+.images {
+    flex-direction: column;
+    align-items: center;
+}
+.images > * {
+    padding: 1em;
 }
 @keyframes fadeIn{
     0% {

@@ -19,7 +19,7 @@
 	<div class="container nav-bar">
 		<div class="row">
 			<div class="col-4">
-				<a class="align-vertical flex" href="./home.html">
+				<a class="align-vertical flex" href="./index.html">
 					<img id="logo-img" src="assets/company_logo.JPG" />
 					<h1 class="logo-font">Triple Solid</h1>
 				</a>
@@ -52,27 +52,27 @@
 	</header> -->
 	<body>
 	
-		<section class="landing">
+		<section class="container-fluid landing">
 			<img src="assets/image01.png" alt="landing image">
 			<article class="overlay">
-				<h2>Supply Chain Service and Consulting</h2>
-				<span class="hidden" id="first-span">For consulting, we will find different professionals for different cases</span>
-				<span class="hidden" id="second-span">We will sign a contract with the customer and professional by cases</span>
+				<h2>Business Plan</h2>
+				<h3 class="hidden" id="first-span">Supply Chain Service B to C and Consulting</h3>
+				<h3 class="hidden" id="second-span">Triple Solid</h3>
 			</article>
 		</section>
 
-		<section class="objectives">
+		<section class="container objectives">
 			<div>
 				<h2>Objectives</h2>
 				<ul>
-					<li>Focus on power electronics related products</li>
-					<li>Support small and middle companies without supply chain 	department</li>
-					<li>Provide custom designs</li>
-					<li>Lower costs by comparing different vendors around the world</li>
-					<li>Create one Brand with different products</li>
+					<li class="col-10">Focus on power electronics related products</li>
+					<li class="col-10">Support small and middle companies without supply chain department</li>
+					<li class="col-10">Provide custom designs</li>
+					<li class="col-10">Lower costs by comparing different vendors around the world</li>
+					<li class="col-10">Create one Brand with different products</li>
 				</ul>
 			</div>
-			<img src="assets/table.png" alt="">
+			<img class="img-fluid" src="assets/table.png" alt="">
 		</section>
 
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -90,7 +90,7 @@
 	</footer>
 	<script>
 		let first = document.getElementById('first-span');
-		let second = document.getElementById('second-span');
+		let second = document.getElementById('second-span')
 
 		const toggleClass = (el) => {
 			el.className += " show";

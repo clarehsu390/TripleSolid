@@ -7,6 +7,9 @@ a {
     text-decoration: none;
     color: black;
 }
+h1 {
+    color: #4f90cf
+}
 
 /* Reusable */
 .align-vertical {
@@ -55,7 +58,7 @@ a {
 .landing {
     display: flex;
     justify-content: center;
-    height: 40em;
+    height: 35em;
 }
 .landing img {
     width: 70em;
@@ -70,7 +73,7 @@ a {
     position: absolute;
     width: 400px;
     background: #4f90cf;
-    height: 40em;
+    height: 35em;
     opacity: 0.9;
 }
 .overlay h2 {
@@ -79,6 +82,10 @@ a {
     width: 300px;
     font-size: 30px;
     border-bottom: solid 1px white;
+}
+
+#first-span {
+    padding: 3em;
 }
 .hidden {
     display: none;
@@ -117,25 +124,24 @@ footer p {
 .about-page h1 {
    width: 10em;
 }
-.about-page section{
-    display: flex;
-    align-items: center;
-    color: #4f90cf;
-    padding: 1em;
-}
-.about-page p {
-    width: 400px;
+
+.about-page li {
     color: black;
-    padding-left: 20em;
+}
+.about-page section {
+    display: flex;
 }
 .about-page {
     display: flex;
-    width: 1000px;
     flex-direction: column;
     align-items: center;
-    margin: auto;
+    justify-content: center;
     color: #4f90cf;
-    padding: 3em;
+    padding: 2em;
+}
+.about-page img {
+    height: 18em;
+    width: 15em;
 }
 .contact {
     text-align: center;
@@ -145,6 +151,16 @@ footer p {
 }
 .contact a {
     text-decoration: underline;
+}
+.products {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 800px;
+}
+.products > * {
+    padding: 10px;
 }
 @keyframes fadeIn{
     0% {

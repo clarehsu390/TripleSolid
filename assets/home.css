@@ -27,6 +27,10 @@ li {
     margin-bottom: auto;
 }
 
+.align-center {
+    text-align: center;
+}
+
 /* Nav bar Section */
 .nav-bar {
     /* display: flex; */
@@ -115,20 +119,16 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4em;
-    margin-top: 10px;
-    width: 1000px;
+    padding-bottom: 3em;
+    padding-top: 1em;
 }
-.objectives div {
-    flex-direction: column;
-    align-items: flex-end
-}
+
 .objectives h2 {
     color: #4f90cf;
-    padding: 0.5em;
+    padding: 1em;
 }
 .objectives img {
-    height: 20em;
+    height: auto;
     width: 30em;
 }
 footer {
@@ -140,10 +140,11 @@ footer {
     text-align: center;
     color: white;
     background-color: #2e2e2e;
-    height: 115px;
+    height: 145px;
     width: 100%;
-
+    padding: 5em;
 }
+
 .sticky-footer {
     position: fixed;
 }
@@ -207,7 +208,6 @@ footer p {
         transform: translateY(0%);
         opacity: 1
     }
-
 }
 @media only screen and (max-width: 768px) {
    .logo {
@@ -225,7 +225,6 @@ footer p {
        justify-content: center;
        padding: 2em;
        height: 100%;
-      
    }
    .landing {
        flex-direction: column;
@@ -234,7 +233,6 @@ footer p {
    .overlay {
        opacity: 0.6;
    }
-
    .landing img {
       opacity: 0.2;
       width: 100%;

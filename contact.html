@@ -44,6 +44,21 @@
             <p id="footer">Copyright 2018 Triple Solid</p>
             <p> 10101 Southwest Freeway, Houston, TX</p>
         </footer>
+
+        <script>
+                let first = document.getElementById('first-span');
+                let second = document.getElementById('second-span')
+        
+                const toggleClass = (el) => {
+                    el.className += " show";
+                }
+        
+                setTimeout(() => toggleClass(first), 1000);
+                setTimeout(() => toggleClass(second), 3000);
+        
+                let footer = document.getElementById('footer');
+                footer.innerHTML = '&copy; Copyright ' + new Date().getFullYear() + " Triple Solid"
+            </script>
     </body>
 </html>
     
